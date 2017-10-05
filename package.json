@@ -1,0 +1,31 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "app using socket-io chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palepnaren/nodejs-chat-app-socket-io.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "chat-application",
+    "ejs",
+    "socket-io."
+  ],
+  "author": "Naren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palepnaren/nodejs-chat-app-socket-io/issues"
+  },
+  "homepage": "https://github.com/palepnaren/nodejs-chat-app-socket-io#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}

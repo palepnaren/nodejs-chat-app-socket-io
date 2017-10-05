@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Chat App </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="icon" href="/images/logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     </head>
+    <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <img height="350" width="350" class="img-circle" src="/images/chat.jpg">
+              <br><br>
+              <div id="errorMessage"></div>
+              <div class="form-group">
+              <form id="userForm">
+                  <input type="text" autofocus class="form-control" placeholder="choose a username" id="name">
+                  <br>
+                  <input type="submit" class="btn btn-primary col-md-offset-4" value="Next">
+                  </form>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div id = "chatRoom">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1 panel-default">
+                <div id="messages" class="well">
+                    <div id="chat"></div>
+                 </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1 panel-primary">
+                <div class="breadcrumb"><h4>Current Users Online.</h4>
+            <div id="users">
+
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <form class="form-group" id="pingHere">
+                <textarea id="msg" class="form-control" placeholder="Enter the message here." required autofocus></textarea>
+                </form>
+                </div>
+            </div>
+
+
+            <div class="row">
+         <h1 align="center"><code>@harry  ciao</code> to say ciao to harry privately</h1>
+      </div>
+        </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/chat.js"></script>
+    </body>
+
+</html>
